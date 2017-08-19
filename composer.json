@@ -26,7 +26,8 @@
     "drupal/memcache_storage": "^1.4",
     "drupal/backup_migrate": "^3.1",
     "drupal/memcache": "^1.6",
-    "drupal/md5check": "^1.0"
+    "drupal/md5check": "^1.0",
+    "drupal/file_integrity": "1.x-dev"
   },
   "conflict": {
     "drupal/core": "8.*"

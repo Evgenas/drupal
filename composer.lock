@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "05186d1bf4bfa6715025a0a942d57985",
+    "content-hash": "58c2feee3b450be38b4c35b0332594fb",
     "packages": [
         {
             "name": "composer/installers",
@@ -600,6 +600,49 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/drupal"
             }
+        },
+        {
+            "name": "drupal/file_integrity",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/file_integrity",
+                "reference": "fef48451df9288297aabea7ec26af4eef365d35f"
+            },
+            "require": {
+                "drupal/advanced_help_hint": "*",
+                "drupal/drupal": "~7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.x-dev",
+                    "datestamp": "1457362558",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gisle",
+                    "homepage": "https://www.drupal.org/user/409554"
+                }
+            ],
+            "description": "Monitors file integrity and sends email alerts when files or directories are modified.",
+            "homepage": "https://www.drupal.org/project/file_integrity",
+            "support": {
+                "source": "http://cgit.drupalcode.org/file_integrity"
+            },
+            "time": "2016-03-07T15:45:06+00:00"
         },
         {
             "name": "drupal/md5check",
@@ -1787,7 +1830,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/file_integrity": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
